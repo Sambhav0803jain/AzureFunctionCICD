@@ -21,7 +21,7 @@ jobs:
       - name: Checkout repository
       -  run: |
           git config --global --add safe.directory /home/runner/work/AzureFunctionCICD/
-      -  uses: actions/checkout@v4
+      #-  uses: actions/checkout@v4
         
 
       - name: Setup Python version
