@@ -19,7 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - run: git config --global --add safe.directory /home/runner/work/AzureFunctionCICD
         
       - name: Setup Python version
         uses: actions/setup-python@v1
