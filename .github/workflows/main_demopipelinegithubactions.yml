@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-      -  run: |
+        run: |
           git config --global --add safe.directory /home/runner/work/AzureFunctionCICD/
    
         
