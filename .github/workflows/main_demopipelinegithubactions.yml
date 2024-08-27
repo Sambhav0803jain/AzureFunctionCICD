@@ -25,6 +25,7 @@ jobs:
         run: |
           pwd 
           ls -ltrh
+          cd ./FunctionApp/DemoSample
           
       - name: Setup Python version
         uses: actions/setup-python@v1
