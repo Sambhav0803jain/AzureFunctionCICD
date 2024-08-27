@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Debug
+        run: |
+          pwd     
+
         
       - name: Setup Python version
         uses: actions/setup-python@v1
@@ -32,6 +37,10 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
+      - name: Debug
+        run: |
+          pwd    
+          
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
