@@ -23,9 +23,9 @@ jobs:
 
       - name: Debug
         run: |
-          pwd     
-
-        
+          pwd 
+          ls -ltrh
+          
       - name: Setup Python version
         uses: actions/setup-python@v1
         with:
